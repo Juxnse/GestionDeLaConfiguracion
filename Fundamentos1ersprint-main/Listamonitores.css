@@ -1,0 +1,87 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Imagenes/fondoUdem.jpeg');
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el degradado oscuro */
+body::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Degradado negro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #E02E45;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para los enlaces de navegación cuando se pasan por encima */
+nav a:hover {
+    text-decoration: underline;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 60%; /* Ancho de la tabla */
+    background-color: #fff; /* Fondo blanco para la tabla */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Sombra para la tabla */
+    margin-top: 170px;
+    margin-left: 300px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #E02E45; /* Color de fondo para las celdas de encabezado */
+    color: #fff; /* Color de texto para las celdas de encabezado */
+}
