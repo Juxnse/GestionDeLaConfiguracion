@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment on push to the main branch
+      - main  
 
 jobs:
   build:
@@ -13,8 +13,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # Fetch all history for all branches and tags
-        clean: true     # Clean the repository before fetching
+        fetch-depth: 0
+        clean: true    
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -31,6 +31,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages  # The branch to deploy to, usually 'gh-pages'
-        publish_dir: ./build      # The directory to publish, adjust if different
+        publish_branch: gh-pages 
+        publish_dir: ./build      
 
