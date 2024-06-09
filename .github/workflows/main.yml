@@ -18,3 +18,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
+          source_dir: FundamentosSprintFinal-main/ # Directorio donde están los archivos a desplegar
